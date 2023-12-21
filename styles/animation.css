@@ -1,0 +1,15 @@
+html{
+    animation: trans_form_to 0.75s;
+}
+
+@keyframes trans_form_to{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(100);
+    }
+}

@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>library login</title>
     <link rel="stylesheet" href="styles/index.style.css">
+    <link rel="stylesheet" href="styles/animation.css">
 </head>
 <body>
     <div class="center">
         <h1>Welcome To Librarian</h1>
     </div>
-    <div class="center">
-        <h1>Log in here</h1>
-    </div>
     <div class="form">
+        <div class="form-title">
+            <h1>Log in here</h1>
+        </div>
         <form action="" method="post">
             <div>
                 <label class="input-name" for="username">UserName :</label>

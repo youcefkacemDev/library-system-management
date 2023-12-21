@@ -60,3 +60,8 @@ body{
 .log-in:active{
     background-color: #346cdbbb;
 }
+
+.form-title{
+    font-size: xx-large;
+    padding: 12px;
+}
