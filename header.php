@@ -11,18 +11,18 @@
     <div class="header">
         <nav class="nav_bar">
             <div class="logo">
-                <a href="#"><img src="images/logo/your place to read.png" alt="logo of the web site" width="100px" height="100px"></a>
+                <a href="home.php"><img src="images/logo/logo.png" alt="logo of the web site" width="100px" height="100px"></a>
             </div>
             <div class="links">
                 <ul class="link_list">
                     <li>
-                        <a href="#">Category</a>
+                        <a href="category.php">Category</a>
                     </li>
                     <li>
-                        <a href="#">Books</a>
+                        <a href="books.php">Books</a>
                     </li>
                     <li>
-                        <a href="#">Issue Books</a>
+                        <a href="issue_books.php">Issue Books</a>
                     </li>
                     <li class="log_out">
                         <a href="index.php">Log out</a>

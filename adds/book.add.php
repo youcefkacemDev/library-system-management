@@ -5,45 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L.S.M book add</title>
     <link rel="stylesheet" href="../styles/animation.css">
+    <link rel="stylesheet" href="../styles/add.style.css">
 </head>
 <body>
-    <div class="design_side">
-        <h1>Add New .<br>Book</h1>
+    <div class="design_side_left">
+        <h1 class="left_title">Add New<br>Book</h1>
     </div>
-    <div>
-        <div>
-            <h1>Fill The Book Information Bellow :</h1>
-        </div>
-        <div>
+    <div class="design_side_right">
+        <div class="form-enter">
             <form action="" method="post">
-                <div>
-                    <input type="text" name="book_name" required placeholder="Book Name">
+                <div class="form_title">
+                    <h1>Fill The Book Information Bellow :</h1>
                 </div>
                 <div>
-                    <input type="text" name="book_author" required placeholder="Book Author">
+                    <input class="enter" type="text" name="book_name" required placeholder="Book Name">
                 </div>
                 <div>
-                    <select name="category">
-                        <option value="">m</option>
-                        <option value="">f</option>
-                        <option value="">a</option>
-                        <option value="">d</option>
-                        <option value="">3</option>
+                    <input class="enter" type="text" name="book_author" required placeholder="Book Author">
+                </div>
+                <div>
+                    <select name="category" required>
+                        <option value="">select the category</option>
+                        <hr>
+                        <option value="m">m</option>
+                        <option value="f">f</option>
+                        <option value="a">a</option>
+                        <option value="d">d</option>
+                        <option value="3">3</option>
                     </select>
                 </div>
                 <div>
-                    <input type="text" name="book_ISBN" required placeholder="Book ISBN">
+                    <input class="enter" type="text" name="book_ISBN" required placeholder="Book ISBN">
                 </div>
                 <div>
-                    <input type="text" name="number_of_copy" required placeholder="Number Of Copy">
+                    <input class="enter" type="text" name="number_of_copy" required placeholder="Number Of Copy">
                 </div>
                 <div>
-                    <textarea name="details" cols="19" rows="2">book :</textarea>
+                    <textarea name="details" cols="38" rows="4" required>book :</textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Add">
+                    <input id="add_book" type="submit" value="Add">
                 </div>
             </form>
+            <div>
+                <a href="../books.php"><button id="add_book">Cancel</button></a>
+            </div>
         </div>
     </div>
 </body>

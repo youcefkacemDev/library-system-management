@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -36,19 +36,20 @@ header {
 }
 
 .header-logo img {
-    max-height: 80px; 
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: cover;
+    object-position: center; */
     position: relative;
     top:50px ;
     left:50px ;
 }
+
 .header-title {
     flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .header-title h1 {
     font-size: 2.5rem; 
     
@@ -73,27 +74,28 @@ header {
     margin-top: 100px;
     
 }
+
 .wrapper .form-box 
 {
     width: 100%;
     padding: 40px;
-    
-
-
 }
+
 .form-box h2 
 {
-   font-size: 2em ;
+    font-size: 2em ;
     color: #333;
     text-align: center;
 }
+
 .input-box {
-position :relative ; 
-width:100%;
-height: 50px;
-border-bottom:2px solid #162938 ;
-margin : 30px 0 ; 
+    position :relative ; 
+    width:100%;
+    height: 50px;
+    border-bottom:2px solid #162938 ;
+    margin : 30px 0 ; 
 }
+
 .input-box label 
 {
     position: absolute;
@@ -105,12 +107,13 @@ margin : 30px 0 ;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
-
 }
+
 .input-box input:focus~label , 
 .input-box input:valid~label {
     top : -5px ;
 }
+
 .input-box input {
     width:100%;
     height: 100%;
@@ -121,8 +124,7 @@ margin : 30px 0 ;
     color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px ; 
-    }
-    
+}
 
 .input-box .icon 
 {

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.design_side_left{
+    width: 40%;
+    height: 100vh;
+    float: left;
+    background-image: url(../images/i7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 239, 201);
+    font-size: 45px;
+}
+
+.left_title{
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.form-enter{
+    background-color: rgba(214, 201, 169, 0.604);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+}
+
+.design_side_right{
+    background-image: url(../images/i9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 100vh;
+    float: right;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form_title{
+    color: rgb(39, 29, 27);
+}
+
+.enter{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+textarea{
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+select{
+    text-align: center;
+    border-radius: 20px;
+    width: 270px;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+#add_book{
+    border-radius: 20px;
+    font-size: medium;
+    background-color: rgb(111, 65, 42);
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    color: rgb(255, 253, 201);
+}
+
+#add_book:hover{
+    background-color: rgb(181, 88, 44);
+    border: 0;
+}
+
+#add_book:active{
+    background-color: rgb(115, 107, 63);
+}
