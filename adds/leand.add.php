@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(isset($_SESSION['login'])){
+        
+    }else{
+        header("location: index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +21,7 @@
     </div>
     <div class="design_side_right">
         <div class="form-enter">
-            <form action="" method="post">
+            <form action="../includes/lend.inc.php" method="post">
                 <div>
                     <h1>Fill The Lender Information Bellow :</h1>
                 </div>
@@ -38,6 +46,9 @@
                         <option value="a">a</option>
                         <option value="s">s</option>
                     </select>
+                </div>
+                <div>
+                    <input class="enter" type="date" name="date">
                 </div>
                 <div>
                     <input id="add_book" type="submit" value="Borrow Book">

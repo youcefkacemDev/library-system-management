@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/header.style.css">
     <link rel="stylesheet" href="styles/animation.css">
-    <title></title>
+    <title>L.S.M home</title>
 </head>
 <body>
     <div class="header">
@@ -25,7 +25,7 @@
                         <a href="issue_books.php">Issue Books</a>
                     </li>
                     <li class="log_out">
-                        <a href="index.php">Log out</a>
+                        <a href="includes/logout.inc.php">Log out</a>
                     </li>
                 </ul>
             </div>

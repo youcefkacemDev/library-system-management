@@ -19,7 +19,7 @@
         <div class="wrapper">
             <div class="form-box login">
                 <h2>Login </h2>
-                <form action="" method="post">
+                <form action="includes/login.inc.php" method="post">
                     <div class="input-box">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
@@ -34,7 +34,7 @@
                         <input type="password" name="password"  required>
                         <label>Password</label>
                     </div>
-                    <button type="submit" class="log-in">Login</button>
+                    <button type="submit" class="log-in" name="login">Login</button>
                 </form> 
             </div>
         </div>

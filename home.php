@@ -1,5 +1,11 @@
 <?php 
-    include "header.php"
+    include "header.php";
+    session_start();
+    if(isset($_SESSION['login'])){
+        
+    }else{
+        header("location: index.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +19,7 @@
 <body>
     <div class="parent_face">
         <div class="child1" id="items">
-            <img src="images/i11.jpg" alt="library image" width="50%" height="50%">
+            <img src="images/i11.jpg" alt="library image" width="50%" height="50%" id="library_image">
         </div>
         <div class="child2" id="items">
             

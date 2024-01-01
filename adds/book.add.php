@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(isset($_SESSION['login'])){
+        
+    }else{
+        header("location: index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +21,12 @@
     </div>
     <div class="design_side_right">
         <div class="form-enter">
-            <form action="" method="post">
+            <form action="../includes/book.inc.php" method="post">
                 <div class="form_title">
                     <h1>Fill The Book Information Bellow :</h1>
                 </div>
                 <div>
-                    <input class="enter" type="text" name="book_name" required placeholder="Book Name">
+                    <input class="enter" type="text" name="book_title" required placeholder="Book Name">
                 </div>
                 <div>
                     <input class="enter" type="text" name="book_author" required placeholder="Book Author">
