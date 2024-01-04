@@ -26,6 +26,8 @@
                     <h1>Fill The Lender Information Bellow :</h1>
                 </div>
                 <div>
+                    <!-- ADD A DESIGN FOR THIS TITLE  -->
+                    <h4>Make Sure The Book Is Existing In The Library</h4>
                     <input class="enter" type="text" name="book_name" required placeholder="Book Name">
                 </div>
                 <div>
@@ -51,7 +53,7 @@
                     <input class="enter" type="date" name="date">
                 </div>
                 <div>
-                    <input id="add_book" type="submit" value="Borrow Book">
+                    <input id="add_book" type="submit" value="Borrow Book" name="insert">
                 </div>
             </form>
             <a href="../issue_books.php"><button id="add_book">Cancel</button></a>

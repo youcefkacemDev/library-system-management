@@ -4,7 +4,8 @@
         private $server = "localhost";
         private $user_name = "root";
         private $password = "";
-        private $db_name = "library_management_system";
+        private $db_name = "library_management_system2";
+        
         protected function connect(){
             $dsn = "mysql:host=" . $this->server . "; dbname=" . $this->db_name;
             $pdo = new PDO($dsn, $this->user_name, $this->password);

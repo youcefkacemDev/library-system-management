@@ -9,5 +9,8 @@
     $number_of_copy = $_POST['number_of_copy'];
     $details = $_POST['details'];
 
-    $book = new Book($book_title, $book_author, $category, $book_ISBN, $number_of_copy, $details);
-    $book->display();
+    if(isset($_POST["insert"])){
+        $book = new Book($book_title, $book_author, $category, $book_ISBN, $number_of_copy, $details);
+        $book->bookInsert();
+        header("location: ../books.php");
+    }

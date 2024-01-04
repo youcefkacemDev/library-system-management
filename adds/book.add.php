@@ -5,6 +5,7 @@
     }else{
         header("location: index.php");
     }
+    include("../includes/autoLoader.inc.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,11 +36,13 @@
                     <select name="category" required>
                         <option value="">select the category</option>
                         <hr>
-                        <option value="m">m</option>
-                        <option value="f">f</option>
-                        <option value="a">a</option>
-                        <option value="d">d</option>
-                        <option value="3">3</option>
+                        <?php 
+                            $categoryFetch = new CategoryFetch();
+                            $categories = $categoryFetch->categoryGet();
+                            foreach($categories as $category){
+                                echo "<option value=" . $category['category_id'] . ">" . $category["category_name"] . "</option>";
+                            }
+                        ?>
                     </select>
                 </div>
                 <div>
@@ -52,7 +55,7 @@
                     <textarea name="details" cols="38" rows="4" required>book :</textarea>
                 </div>
                 <div>
-                    <input id="add_book" type="submit" value="Add">
+                    <input id="add_book" type="submit" value="Add" name="insert">
                 </div>
             </form>
             <div>

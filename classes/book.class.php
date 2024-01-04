@@ -1,5 +1,5 @@
 <?php
-    class Book {
+    class Book extends LibraryController {
         private $bookTitle;
         private $book_author;
         private $category;
@@ -17,19 +17,8 @@
             $this->details = $b_details;
         }
 
-        public function display(){
-            echo $this->bookTitle;
-            echo "<br>";
-            echo $this->book_author;
-            echo "<br>";
-            echo $this->category;
-            echo "<br>";
-            echo $this->book_ISBN;
-            echo "<br>";
-            echo $this->number_of_copy;
-            echo "<br>";
-            echo $this->details;
-            echo "<br>";
+        public function bookInsert(){
+            $this->insertBook($this->bookTitle, $this->book_author, $this->category, $this->book_ISBN, $this->number_of_copy, $this->details);
         }
 
     }

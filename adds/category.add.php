@@ -32,7 +32,7 @@
                     <textarea name="description"  cols="38" rows="4" required>Category :</textarea>
                 </div>
                 <div>
-                    <input id="add_book" type="submit" value="Add">
+                    <input id="add_book" type="submit" value="Add" name="insert">
                 </div>
             </form>
             <a href="../category.php"><button id="add_book">Cancel</button></a>
